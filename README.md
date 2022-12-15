@@ -20,7 +20,7 @@ Isolated environment for building javascript and php project
 </table>
 
 ## 📚 Installation
-- Run Command : `docker run --rm --interactive --tty artistudioxyz/kuli <command>`
+- Run Command : `docker run --rm --interactive --tty docker pull ghcr.io/artistudioxyz/kuli <command>`
     - Composer : `composer update`
     - Node : `npm i`
 
