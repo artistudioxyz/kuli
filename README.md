@@ -21,6 +21,8 @@ Isolated environment for building javascript and php project
 
 ## 📚 Installation
 - Run Command : `docker run --rm --interactive --tty artistudioxyz/kuli <command>`
+    - Composer : `composer update`
+    - Node : `npm i`
 
 ## 🔥 Development
 - Manually build package : `docker-compose up --build`
