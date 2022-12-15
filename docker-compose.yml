@@ -5,6 +5,4 @@ services:
     container_name: kuli
     image: ghcr.io/artistudioxyz/kuli:latest
     build: .
-    volumes:
-      - /home/ubuntu:/home/ubuntu
     restart: always
