@@ -1,0 +1,8 @@
+version: '3'
+services:
+
+  kuli:
+    container_name: kuli
+    image: artistudioxyz/kuli:latest
+    build: .
+    restart: always
