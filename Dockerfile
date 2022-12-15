@@ -8,7 +8,8 @@ RUN apk update && apk add \
     git \
     zip unzip \
     nodejs npm \
-    python3 py3-pip
+    python3 py3-pip \
+    openssl
 
 # composer
 RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
