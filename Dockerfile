@@ -1,14 +1,14 @@
-FROM php:8.2-cli-alpine3.16
+FROM php:8.2-cli
 
 WORKDIR /app
 
-RUN apk update && apk add \
-    bash \
-    wget curl \
-    git \
-    zip unzip \
-    nodejs npm \
-    python3 py3-pip
+RUN apt-get update && apt-get install -y \
+        git \
+        zip unzip
+
+# node
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+      && apt-get install -y nodejs
 
 # composer
 RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \

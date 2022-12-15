@@ -3,6 +3,6 @@ services:
 
   kuli:
     container_name: kuli
-    image: artistudioxyz/kuli:latest
+    image: ghcr.io/artistudioxyz/kuli:latest
     build: .
     restart: always
