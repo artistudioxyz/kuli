@@ -1,14 +1,26 @@
-FROM php:8.2-cli
+FROM php:8.2-fpm
 
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
+        apt-utils \
         git \
-        zip unzip
+        jq \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libmemcached-dev \
+        libpng-dev \
+        gnupg \
+        build-essential \
+        zip unzip \
+        zlib1g-dev
 
 # node
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
       && apt-get install -y nodejs
+
+# update npm to last version
+RUN npm i -g npm
 
 # composer
 RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
