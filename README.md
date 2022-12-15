@@ -3,8 +3,6 @@ Isolated environment for building javascript and php project
 
 ![Stars](https://img.shields.io/github/stars/artistudioxyz/kuli?style=social)
 ![Size](https://img.shields.io/github/repo-size/artistudioxyz/kuli)
-![Image Size](https://ghcr-badge.deta.dev/artistudioxyz/kuli/size)
-![Version](https://ghcr-badge.deta.dev/artistudioxyz/kuli/latest_tag?trim=major&label=latest)
 
 <table>
     <tbody>
