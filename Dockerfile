@@ -1,6 +1,7 @@
 FROM php:8.2-cli-alpine3.16
 
 RUN apk update && apk add \
+    bash \
     wget curl \
     git \
     zip unzip \
