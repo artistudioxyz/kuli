@@ -2,7 +2,7 @@ FROM php:8.2-cli
 
 WORKDIR /app
 
-RUN apt-get update && apt get install -y \
+RUN apt-get update && apt-get install -y \
     wget curl \
     git \
     zip unzip
