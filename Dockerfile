@@ -3,9 +3,8 @@ FROM php:8.2-cli
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
-    wget curl \
-    git \
-    zip unzip
+        git \
+        zip unzip
 
 # node
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
