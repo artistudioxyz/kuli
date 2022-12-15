@@ -17,7 +17,15 @@ Isolated environment for building javascript and php project
 </table>
 
 ## 📚 Installation
-- Run Command : `docker run --rm --interactive --tty docker pull ghcr.io/artistudioxyz/kuli <command>`
+- via Docker Run : `docker run --rm --interactive --tty ghcr.io/artistudioxyz/kuli:latest <command>`
+- via Docker Run with Mount Volume :
+```
+docker run --rm --interactive --tty \
+    --volume $PWD:/app \
+    ghcr.io/artistudioxyz/kuli:latest <command>
+```
+
+- Sample Command :
     - Composer : `composer update`
     - Node : `npm i`
 
