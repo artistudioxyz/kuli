@@ -1,4 +1,4 @@
-FROM php:8.2-fpm
+FROM php:8.3-fpm
 
 WORKDIR /app
 
@@ -13,14 +13,15 @@ RUN apt-get update && apt-get install -y \
         gnupg \
         build-essential \
         zip unzip \
-        zlib1g-dev
-
-# node
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
-      && apt-get install -y nodejs
+        zlib1g-dev \
+        nodejs \
+        npm
 
 # update npm to last version
 RUN npm i -g npm
+
+# install pnpm via npm
+RUN npm install -g pnpm
 
 # composer
 RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
