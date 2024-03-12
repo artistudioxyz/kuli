@@ -11,6 +11,7 @@ Isolated environment for building javascript and php project
             <td class="grid grid-cols-6">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" alt="Composer" height="20">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node Js" height="20">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pnpm/pnpm-original.svg" alt="PNPM" height="20" />
             </td>
         </tr>
     </tbody>
@@ -28,6 +29,7 @@ docker run --rm --interactive --tty \
 - Sample Command :
     - Composer : `composer update`
     - Node : `npm i`
+    - PNPM : `pnpm i`
 
 ## 🔥 Development
 - Manually build package : `docker-compose up --build`
