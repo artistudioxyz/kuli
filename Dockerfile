@@ -32,3 +32,7 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 
 # Install PHPCS globally
 RUN composer global require "squizlabs/php_codesniffer=*"
+
+# Install WPCS globally
+RUN composer global config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+RUN composer global require --dev wp-coding-standards/wpcs:"^3.0"
